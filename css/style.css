@@ -23,6 +23,11 @@ body {
   background: #f0f8ff;
   opacity: 0.75;
 }
+.active {
+  transform: scale(1.01);
+  opacity: 1;
+  transition: all 0.5s ease;
+}
 .left {
   width: 32.5%;
   border-top-left-radius: 0.8rem;
@@ -37,7 +42,7 @@ body {
 /* MESSAGE HEADER
 ------------------------------------------------*/
 .main-section {
-  position: absolute;
+  position: relative;
   top: 7.5%;
   left: 17.5%;
   height: 85vh;
@@ -68,7 +73,7 @@ body {
 /* GAMEBOARD
 -------------------------------------------------*/
 .gameboard {
-  height: 46vh;
+  height: 52vh;
   width: 32vw;
   background: linear-gradient(90deg, rgb(3, 156, 144) 0%, rgb(187, 4, 68) 100%);
   margin: auto;
@@ -80,7 +85,7 @@ body {
 }
 .cell {
   flex: 0 0 32.7%; /* don't grow, don't shrink, width */
-  height: 15vh;
+  height: 17vh;
   background-color: rgb(199, 196, 196);
 }
 .cell:nth-child(2),
@@ -98,3 +103,14 @@ body {
 }
 /* PLAYERS NAME, SCORE AND ROLE 
 ------------------------------------------*/
+.row {
+  width: 100%;
+}
+.span-1-of-2 {
+  width: 50%;
+  display: inline;
+}
+input {
+  display: inline;
+  height: 5%;
+}

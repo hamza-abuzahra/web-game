@@ -80,16 +80,19 @@
   .fa-sync-alt {
     font-size: 0.8rem;
   }
+  .role {
+    font-size: 0.6rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .cell {
-    flex: 0 0 32%;
-    height: 12vh;
+    flex: 0 0 31.5%;
+    height: 10vh;
   }
   .gameboard {
-    height: 37.3vh;
+    height: 30.8vh;
     margin-bottom: 10%;
-    width: 45vw;
+    width: 40vw;
   }
   .head-section p {
     font-size: 0.7rem;
@@ -100,5 +103,65 @@
   .fa-sync-alt {
     font-size: 0.6rem;
     margin: 0 0;
+  }
+  .player1,
+  .player2 {
+    font-size: 0.6rem;
+    width: 3rem;
+  }
+}
+@media screen and (max-width: 464px) {
+  .cell {
+    flex: 0 0 31.3%;
+    height: 10vh;
+  }
+  .gameboard {
+    height: 30.8vh;
+    margin-bottom: 10%;
+    width: 40vw;
+  }
+  .head-section p {
+    font-size: 0.6rem;
+    margin-bottom: 22%;
+  }
+  .fa-power-off,
+  .fa-plus,
+  .fa-sync-alt {
+    font-size: 0.4rem;
+    margin: auto;
+  }
+  .player1,
+  .player2 {
+    font-size: 0.4rem;
+    width: 2rem;
+  }
+}
+@media screen and (max-width: 414px) {
+  .cell {
+    flex: 0 0 31.1%;
+    height: 10vh;
+  }
+  .gameboard {
+    height: 30.8vh;
+    margin-bottom: 10%;
+    width: 50vw;
+  }
+  .head-section p {
+    font-size: 0.6rem;
+    margin-bottom: 20%;
+  }
+  .fa-power-off,
+  .fa-plus,
+  .fa-sync-alt {
+    font-size: 0.4rem;
+    margin: 0 0;
+  }
+  .head-section ul li {
+    margin: 0;
+  }
+  .player1,
+  .player2 {
+    font-size: 0.6rem;
+    width: 3rem;
   }
 }

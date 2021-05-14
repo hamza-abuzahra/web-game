@@ -1,0 +1,104 @@
+/* 1310
+1020
+780 
+500*/
+@media screen and (max-width: 1310px) {
+  .cell {
+    flex: 0 0 32.6%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .cell {
+    flex: 0 0 32.4%;
+  }
+}
+@media screen and (max-width: 905px) {
+  .cell {
+    flex: 0 0 32.2%;
+    height: 16vh;
+  }
+  .gameboard {
+    height: 49.3vh;
+  }
+  .player1,
+  .player2 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 734px) {
+  .cell {
+    flex: 0 0 32%;
+    height: 14vh;
+  }
+  .gameboard {
+    height: 43.3vh;
+    width: 35vw;
+    margin-bottom: 4%;
+  }
+  .head-section p {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+  }
+  .player1,
+  .player2 {
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .cell {
+    flex: 0 0 32%;
+    height: 13vh;
+  }
+  .gameboard {
+    height: 40.3vh;
+    margin-bottom: 4%;
+    width: 37vw;
+  }
+  .head-section p {
+    font-size: 1rem;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cell {
+    flex: 0 0 32%;
+    height: 12vh;
+  }
+  .gameboard {
+    height: 37.3vh;
+    margin-bottom: 4%;
+    width: 42vw;
+  }
+  .head-section p {
+    font-size: 1rem;
+    margin-bottom: 8%;
+  }
+  .fa-power-off,
+  .fa-plus,
+  .fa-sync-alt {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cell {
+    flex: 0 0 32%;
+    height: 12vh;
+  }
+  .gameboard {
+    height: 37.3vh;
+    margin-bottom: 10%;
+    width: 45vw;
+  }
+  .head-section p {
+    font-size: 0.7rem;
+    margin-bottom: 20%;
+  }
+  .fa-power-off,
+  .fa-plus,
+  .fa-sync-alt {
+    font-size: 0.6rem;
+    margin: 0 0;
+  }
+}

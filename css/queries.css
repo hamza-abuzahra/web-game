@@ -44,6 +44,10 @@
   .player2 {
     width: 4rem;
   }
+  .blue,
+  .pink {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 625px) {
@@ -60,6 +64,10 @@
     font-size: 1rem;
     margin-bottom: 3%;
   }
+  .blue,
+  .pink {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 540px) {
   .cell {
@@ -72,7 +80,6 @@
     width: 42vw;
   }
   .head-section p {
-    font-size: 1rem;
     margin-bottom: 8%;
   }
   .fa-power-off,
@@ -109,6 +116,10 @@
     font-size: 0.6rem;
     width: 3rem;
   }
+  .blue,
+  .pink {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 464px) {
   .cell {
@@ -135,6 +146,10 @@
     font-size: 0.4rem;
     width: 2rem;
   }
+  .blue,
+  .pink {
+    font-size: 0.6rem;
+  }
 }
 @media screen and (max-width: 414px) {
   .cell {
@@ -147,7 +162,6 @@
     width: 50vw;
   }
   .head-section p {
-    font-size: 0.6rem;
     margin-bottom: 20%;
   }
   .fa-power-off,

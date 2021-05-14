@@ -2,7 +2,6 @@
   margin: 0;
   box-sizing: border-box;
   font-size: 24px;
-  font-weight: 200;
 }
 body {
   background: rgb(19, 255, 237);
@@ -12,6 +11,16 @@ body {
     rgb(44, 18, 78) 50%,
     rgb(187, 4, 68) 100%
   );
+}
+.pink {
+  font-size: 1.5rem;
+  color: rgb(187, 4, 68);
+}
+.blue {
+  color: rgb(8, 151, 139);
+}
+.invisible {
+  visibility: hidden;
 }
 /* MAIN CONTAINER 
 ----------------------------------------------*/
@@ -26,7 +35,7 @@ body {
 .active {
   transform: scale(1.01);
   opacity: 1;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .left {
   width: 32.5%;
@@ -49,7 +58,7 @@ body {
   width: 65vw;
 }
 .head-section p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-left: 3%;
   margin-top: 2%;
   display: inline-block;
@@ -57,6 +66,7 @@ body {
 .head-section ul li {
   display: inline-block;
   margin: 0 0.3rem;
+  width: 30px;
 }
 .head-section ul {
   float: right;
@@ -87,6 +97,9 @@ body {
   flex: 0 0 32.7%; /* don't grow, don't shrink, width */
   height: 17vh;
   background-color: rgb(199, 196, 196);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cell:nth-child(2),
 .cell:nth-child(8) {
@@ -107,10 +120,19 @@ body {
   width: 100%;
 }
 .span-1-of-2 {
-  width: 50%;
-  display: inline;
+  text-align: center;
+  width: 49%;
+  display: inline-block;
 }
 input {
-  display: inline;
+  width: 35%;
+  text-align: center;
+  margin: 2% auto;
   height: 5%;
+}
+/* ICONS STYILING
+-------------------------------------------- */
+.fa-times,
+.fa-circle {
+  font-size: 3rem;
 }

@@ -4,6 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Tic-Tac-Toe</title>
+    <script
+      src="https://kit.fontawesome.com/c8cde989c5.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="main-container left active"></section>
@@ -13,49 +17,60 @@
       <div class="head-section">
         <p>Ready to start!!</p>
         <ul>
-          <li><button class="reset">Reset</button></li>
-          <li><button class="restart">Restart</button></li>
+          <li>
+            <button class="reset" title="Reset">
+              <i class="fas fa-power-off"></i>
+            </button>
+          </li>
+          <li>
+            <button class="restart" title="New game">
+              <i class="fas fa-plus"></i>
+            </button>
+          </li>
+          <li>
+            <button class="switch" title="Switch players">
+              <i class="fas fa-sync-alt"></i>
+            </button>
+          </li>
         </ul>
       </div>
       <div class="gameboard">
         <div class="grid">
-          <div class="cell" id="1"></div>
-          <div class="cell" id="2"></div>
-          <div class="cell" id="3"></div>
-          <div class="cell" id="4"></div>
-          <div class="cell" id="5"></div>
-          <div class="cell" id="6"></div>
-          <div class="cell" id="7"></div>
-          <div class="cell" id="8"></div>
-          <div class="cell" id="9"></div>
+          <div class="cell empty" id="0"></div>
+          <div class="cell empty" id="1"></div>
+          <div class="cell empty" id="2"></div>
+          <div class="cell empty" id="3"></div>
+          <div class="cell empty" id="4"></div>
+          <div class="cell empty" id="5"></div>
+          <div class="cell empty" id="6"></div>
+          <div class="cell empty" id="7"></div>
+          <div class="cell empty" id="8"></div>
         </div>
       </div>
       <div class="footer">
         <div class="names">
           <div class="row">
             <div class="span-1-of-2">
-              <input type="text" placeholder="player 1" />
+              <input type="text" placeholder="player 1" class="player1" />
+              <span class="role x">X</span>
             </div>
             <div class="span-1-of-2">
-              <input type="text" placeholder="player 2" />
+              <input type="text" placeholder="player 2" class="player2" />
+              <span class="role y">O</span>
             </div>
           </div>
           <div class="row">
-            <div class="span-1-of-2">     
-              <label for="score-player-1" class="score">0</label>
+            <div class="span-1-of-2">
+              <label for="score-player-1" class="score-1">0</label>
             </div>
-
-            <div class="span-1-of-2"> </div><label for="score-player-2" class="score">0</label></div>
-            
+            <div class="span-1-of-2">
+              <label for="score-player-2" class="score-2">0</label>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- -->
-    <!--
-    <div class="gameboard"></div>
-    <div class="plyer-section"></div>
-    <div class="plyer-section"></div> -->
+    <script src="js/app.js"></script>
   </body>
 </html>
